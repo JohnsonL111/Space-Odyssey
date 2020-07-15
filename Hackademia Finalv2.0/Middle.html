@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Space Odyssey </title>
+	<link rel ="stylesheet" type="text/css" href="Middle_style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="images/planets/Earth.png" />
+	<script src = "animations.js"> </script>
+</head>
+
+<body class = "background-color">
+<div id = "arrows">
+	<div class= "arrow-up"></div>
+	<div class = "arrow-down"></div>
+	<div class = "arrow-left" onclick = "location.href = 'Left.html';"></div>
+	<div class = "arrow-right" onclick = "location.href = 'Right.html';"></div>
+</div>	
+
+<img class = "pointer" src = "images/rocket.jpg"> </img>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type = "text/javascript">
+    	$(document).mousemove(function(e){
+    		$('.pointer').css({left:e.pageX, top:e.pageY,});
+    	}) </script>
+
+ <div id = "images">
+
+ 	<img src = "images/asteroid_belt.png" width = "200px" height = "1500px" class = "asteroid_belt rotate">
+
+ 	<div class="jupiter_pop" onclick="jup_reveal()">
+	<img src = "images/planets/jupiter.png" width = "200px" height = "200px" class = "jupiter">
+  <span class="jupiter_popup_text" id="jup_popup">Jupiter! 
+<div>	<a href="solarsystem/planet/jupiter.html" target="_blank"><center>Want to Learn More?</center></a></div>
+  </span>
+
+</div>
+	<div class="saturn_pop" onclick="sat_reveal()">
+	<img src = "images/planets/saturn.png" width = "200px" height = "150px" class = "saturn">
+  <span class="saturn_popup_text" id="sat_popup">Saturn! 
+<div>	<a href="solarsystem/planet/saturn.html" target="_blank"><center>Want to Learn More?</center></a></div>
+  </span>
+</div>
+
+
+</div>
+<a class="button" href="index.html">Back to Homepage!</a>
+<footer>
+        <h3>All rights reserved. &copy; 2020 Team No Sleep</h3>
+ </footer>
+</body>
+
+</html>
