@@ -24,6 +24,6 @@ What's next for Space Odyssey:
 
 Built With:
 css3, 
- html5
+ html5,
 javascript,
  jquery
