@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Space Odyssey </title>
+	<link rel ="stylesheet" type="text/css" href="Left_style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="images/planets/Earth.png" />
+	<script src = "animations.js"> </script>
+</head>
+
+<body class = "background-color">
+<div id = "arrows">
+	<div class = "arrow-up">
+		<button onclick = "easter_egg()" class = "top-button"></button>
+	</div>
+	<div class = "arrow-down">
+		<button onclick = "easter_egg()" class = "bottom-button"></button>
+	</div>	
+	<div class = "arrow-left" onclick = "too_far()"></div>
+	<div class = "arrow-right" onclick = "location.href = 'Middle.html';"></div> 
+	</a>
+</div>	
+
+<img class = "pointer" src = "images/rocket.jpg"> </img>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type = "text/javascript">
+    	$(document).mousemove(function(e){
+    		$('.pointer').css({left:e.pageX, top:e.pageY,});
+    	}) </script>
+
+<div id = "images">
+<div class="sun_pop" onclick="su_reveal()">
+	<img src = "images/planets/sun.png" width = "400px" height = "400px" class = "sun">
+  <span class="sun_popup_text" id="su_popup">Sun! 
+<div>	<a href="solarsystem/sun.html" target="_blank"><center>Want to Learn More?</center></a></div>
+  </span>
+</div>
+
+<div class="mercury_pop" onclick="merc_reveal()">
+	<img src = "images/planets/mercury.png" width = "40px" height = "40px" class = "mercury">
+  <span class="mercury_popup_text" id="merc_popup">Mercury! 
+<div>	<a href="solarsystem/planet/mercury.html" target="_blank"><center>Want to Learn More?</center></a></div>
+  </span>
+</div>
+
+<div class="venus_pop" onclick="ven_reveal()">
+	<img src = "images/planets/venus.png" width = "70px" height = "70px" class = "venus">
+  <span class="venus_popup_text" id="ven_popup">Venus! 
+<div>	<a href="solarsystem/planet/venus.html" target="_blank"><center>Want to Learn More?</center></a></div>
+  </span>
+</div>
+
+<div class="earth_pop" onclick="ear_reveal()">
+	<img src = "images/planets/earth.png" width = "70px" height = "70px" class = "earth">
+  <span class="earth_popup_text" id="ear_popup">Earth! 
+<div>	<a href="solarsystem/planet/earth.html" target="_blank"><center>Want to Learn More?</center></a></div>
+  </span>
+</div>
+
+<div class="mars_pop" onclick="ma_reveal()">
+	<img src = "images/planets/mars.png" width = "50px" height = "50px" class = "mars">
+  <span class="mars_popup_text" id="ma_popup">Mars! 
+<div>	<a href="solarsystem/planet/mars.html" target="_blank"><center>Want to Learn More?</center></a></div>
+  </span>
+</div>
+
+<div class="moon_pop" onclick="mo_reveal()">
+  <img src = "images/planets/moon.png" width = "35px" height = "35px" class = "moon">
+  <span class="moon_popup_text" id="mo_popup">Moon! 
+<div> <a href="solarsystem/moon.html" target="_blank"><center>Want to Learn More?</center></a></div>
+  </span>
+</div>
+</div>
+<a class="button" href="index.html">Back to Homepage!</a>
+<footer>
+        <h3>All rights reserved. &copy; 2020 Team No Sleep</h3>
+ </footer>
+</body>
+</html>

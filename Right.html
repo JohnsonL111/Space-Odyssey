@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Space Odyssey </title>
+  <link rel ="stylesheet" type="text/css" href="Right_style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/planets/Earth.png" />
+  <script src = "animations.js"> </script>
+</head>
+
+<body class = "background-color">
+<div id = "arrows">
+  <div class= "arrow-up"></div>
+  <div class = "arrow-down"></div>
+  <div class = "arrow-left" onclick = "location.href = 'Middle.html';"></div>
+  <div class = "arrow-right" onclick = "too_far()" =></div>
+</div>  
+
+<img class = "pointer" src = "images/rocket.jpg"> </img>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type = "text/javascript">
+      $(document).mousemove(function(e){
+        $('.pointer').css({left:e.pageX, top:e.pageY,});
+      }) </script>
+      
+ <div id = "images">
+
+  <div class="uranus_pop" onclick="ura_reveal()">
+  <img src = "images/planets/uranus.png" width = "150px" height = "150px" class = "uranus">
+  <span class="uranus_popup_text" id="ura_popup">Uranus! 
+<div><a href="solarsystem/planet/uranus.html" target="_blank"><center>Want To Learn More?</center></a></div>
+  </span>
+
+  <div class="neptune_pop" onclick="nep_reveal()">
+  <img src = "images/planets/neptune.png" width = "150px" height = "150px" class = "neptune">
+  <span class="neptune_popup_text" id="nep_popup">Neptune! 
+<div> <a href="solarsystem/planet/neptune.html" target="_blank"><center>Want to Learn More?</center></a></div>
+  </span>
+
+   <div class="pluto_pop" onclick="plu_reveal()">
+  <img src = "images/planets/pluto.png" width = "40px" height = "40px" class = "pluto">
+  <span class="pluto_popup_text" id="plu_popup">Pluto! 
+<div> <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank"><center>Want to Learn More?</center></a></div>
+  </span>
+</div>
+<a class="button" href="index.html">Back to Homepage!</a>
+
+</body>
+
+</html>

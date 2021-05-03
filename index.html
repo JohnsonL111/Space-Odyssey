@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Space Odyssey</title>
+	<meta charset ="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href = "style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="images/planets/Earth.png" />
+</head>
+<body>
+	<header>
+		<a href="index.html"><img src="images/planets/Earth.png" alt="logo" class="logo"></a>
+        <div class="name">!Science Fiction Universe</div>
+	<nav>
+		<ul>
+			<li><a href = "planets.html">The Solar System</a>
+				<ul>
+					<li><a href = "solarsystem/sun.html">Sun</a></li>
+					<li><a href = "solarsystem/moon.html">Moon</a></li>
+					<li>Planets
+						<ul>
+							<li><a href = "solarsystem/planet/mercury.html">Mercury</a></li>
+							<li><a href = "solarsystem/planet/venus.html">Venus</a></li>
+							<li><a href = "solarsystem/planet/earth.html">Earth</a></li>
+							<li><a href = "solarsystem/planet/mars.html">Mars</a></li>
+							<li><a href = "solarsystem/planet/jupiter.html">Jupiter</a></li>
+							<li><a href = "solarsystem/planet/saturn.html">Saturn</a></li>
+							<li><a href = "solarsystem/planet/uranus.html">Uranus</a></li>
+							<li><a href = "solarsystem/planet/neptune.html">Neptune</a></li>
+							<li><a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Pluto</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="features.html"> Features</a>
+				<ul>
+					<li><a href = "facts.html"> Interesting Facts</a></li>
+					<li><a href = "Left.html"> Exploration</a></li>
+					<li><a href = "timeline.html">Space Discovery Timeline</a></li>
+				</ul>
+			</li>
+			<li><a href="quiz.html">Quiz</a></li>
+			<li><a href="team.html">About</a></li>
+		</ul>
+	</nav>
+	</header>
+	    <main>
+        <div class="scene">
+  			<div class="rocket nonope">
+				<img src="images/featurerocket.png">
+			</div>
+			<h3 class="text">Welcome to Space Odyssey<br>
+			<div class="select nope">
+				<select onchange="location=this.value">
+        			<option >Click here to choose your path!</option>
+					<option value="planets.html">Learn about the SOLAR SYSTEM.</option>
+        			<option value="facts.html">Discover interesting facts about SPACE.</option>
+        			<option value="Left.html">Explore the OUTER SPACE MAP.</option>
+        			<option value="timeline.html">Check on the SPACE TIMELINE.</a></option>
+        		
+        		</select>
+        	</div>
+       		</h3> 
+		</div>
+		<script>
+			function stars()
+				{
+				let count = 20;
+				let scene = document.querySelector('.scene');
+				let i = 0;
+
+ 			while(i < count)
+				{
+				let star = document.createElement('i');
+				let x = Math.floor(Math.random() * window.innerWidth);
+				let duration = Math.random() * 1;
+				let h = Math.random() * 100;
+				
+				star.style.left = x + 'px';
+				star.style.width = 1 +'px';
+				star.style.height = 50 + h + 'px';
+				star.style.animationDuration = duration + 's';
+
+  				scene.appendChild(star);
+				i++
+				}
+
+				}
+
+			stars();
+
+		</script>
+		</main>
+    <footer>
+        <h3>All rights reserved. &copy; 2020 Team No Sleep</h3>
+    </footer>
+</body>
+</html>
